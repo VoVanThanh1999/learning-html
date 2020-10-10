@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS-Gird-2</title>
+	<style type="text/css">
+		 .wrapper{
+		 	display: grid;
+	      	text-align: center;
+	      	/*grid-template-columns: 1fr 3fr 1fr;*/
+	      	grid-template-columns: repeat(2,1fr 2fr);
+	      	grid-gap: 1em;
+	      	/*grid-auto-rows: 100px;*/
+	      	grid-auto-rows: minmax(100px,auto);
+	      	
+	    }
+	     .nested{
+	    	display: grid;
+	    	color: red;
+	    	grid-template-columns: 30% 30% 30%;
+	    	grid-gap: 13px;
+	    }
+	    .nested div{
+	     	border: #333 1px solid;
+	     }
+	    .wrapper div{
+	      background: #eee;
+	      padding: 1em;
+	    }
+	    .wrapper  div:nth-child(odd){
+	      background: #ddd;
+
+	      color: red;
+	    }
+
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<div>
+			Lorem ipsum dolor sit
+		</div>
+		<div>
+			Lorem ipsum dolor sit
+		</div>
+		<div>
+			Lorem ipsum dolor sit
+			Lorem ipsum dolor sit
+			Lorem ipsum dolor sit
+			Lorem ipsum dolor sit
+			Lorem ipsum dolor sit
+			Lorem ipsum dolor sit
+			Lorem ipsum dolor sit
+			Lorem ipsum dolor sit
+			Lorem ipsum dolor sit
+			Lorem ipsum dolor sit
+			Lorem ipsum dolor sit
+			Lorem ipsum dolor sit
+		</div>
+		<div class="nested">
+			<div>
+				Lorem ipsum
+			</div>
+			<div>
+				Lorem ipsum
+			</div>
+			<div>
+				Lorem ipsum
+			</div>
+			<div>
+				Lorem ipsum
+			</div>
+			<div>
+				Lorem ipsum
+			</div>
+
+		</div>
+		<div>
+			Lorem ipsum dolor sit
+		</div>
+		<div>
+			Lorem ipsum dolor sit
+		</div>
+		<div>
+			Lorem ipsum dolor sit
+		</div>
+		
+	</div>
+
+</body>
+</html>

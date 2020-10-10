@@ -1,0 +1,32 @@
+
+*{
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+.container{
+	margin:auto;
+	width:80%;
+	display: flex;
+	justify-content: center;;
+	align-items: center;
+	flex-wrap: wrap;
+	background:blue;
+	flex-direction: row;
+
+}
+.content{
+	margin: 5px;
+	height: 100%;
+	width: 30%;
+	background: red;
+	display: flex;
+	margin-top: 40px;
+	height: 150px;
+
+	
+}
+.content p{
+
+	padding-left: 5%;
+}

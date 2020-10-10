@@ -1,0 +1,55 @@
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+.main{
+	max-width: 1200px;	
+	margin: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	flex-direction: row-reverse;
+}
+.product{
+	margin: auto;
+	width: 250px;
+	height: 320px;
+	background: grey;
+	position: relative;
+}
+.product img{
+	width: 100%;
+	height: 100%;
+}
+.product a{
+	position: absolute;
+	bottom: 0;
+	left: 1px;
+	display: block;
+	font-size: 40px;
+	font-family: Tamoha;
+	width: 250px;
+	height: 90px;
+	padding-top: 20px;
+	text-decoration: none;
+	color: white;
+	background-color: black;
+	opacity: 0.6;
+	text-align: center;
+}
+.product p{
+	position: absolute;
+	bottom: 100px;
+	left: 56px;
+	text-align: center;
+	padding-top: 5px;
+	width: 150px;
+	font-size: 30px;
+	font-family: arial;
+	border-radius: 4px;
+	height: 50px;
+	color: white;
+	background-color: orange;
+}

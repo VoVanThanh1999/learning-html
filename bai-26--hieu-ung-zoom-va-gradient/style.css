@@ -1,0 +1,45 @@
+*{margin: 0;padding: 0;border: 0;}
+.main{
+	width: 850px;
+	margin: auto;
+	overflow: hidden;
+	background: blue;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.khoi{
+	margin: 0;
+	position: relative;
+	width: 273px;
+	height: 273px;
+	padding: 5px;
+	box-sizing: border-box;
+	overflow: hidden;
+	float: left;	
+	
+}
+.khoi img{	
+	width: 100%;
+	height: 100%;
+	transition: 1s;
+}
+.khoi:hover img{
+	transform: scale(2);
+	transition: 1s;
+}
+.khoi:nth-child(3){
+	background: blue;
+
+}
+.khoi .layer2{
+	position: absolute;
+	width: 273px;
+	height: 273px;
+	top: 0px;
+	left: 0px;
+	z-index: 2;
+	background-image: linear-gradient(to right, red, orange);
+	opacity: 0.3;
+}
